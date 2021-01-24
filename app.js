@@ -41,9 +41,9 @@ app.route("/").post(async (req, res) => {
 app.route("/getData").get(async (req, res) => {
   return res.json(await fetchFromDB());
 });
-
-app.listen(process.env.PORT || 3000, () => {
-  console.log("listening on port 8000...");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`listening on port ${port}...`);
 });
 
 const query = [
