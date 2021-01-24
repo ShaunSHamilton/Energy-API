@@ -1,0 +1,1466 @@
+[
+  {
+    "data": {
+      "productDetails": {
+        "gas": {
+          "medium": "Gas",
+          "tariff": "String",
+          "supplier": "String",
+          "tariffType": null,
+          "paymentMethod": "String",
+          "standingCharge": 20.4435,
+          "onlineDiscount": 0,
+          "from": "2000-01-01T00:00:00.000Z",
+          "dualFuelDiscount": 0,
+          "annualConsumption": "9914.00 kWh",
+          "annualCost": 363.592047,
+          "tcr": null,
+          "exitFees": 0,
+          "unitRates": {
+            "Standard": 2.9148,
+            "Day": null,
+            "Night": null,
+            "Peak": null,
+            "__typename": "UnitRates"
+          },
+          "tariffEndsOn": null,
+          "priceGuaranteedUntil": null,
+          "isEconomy7": false,
+          "code": "String",
+          "isSmartPayg": false,
+          "meterGenerationType": null,
+          "__typename": "Product"
+        },
+        "electricity": {
+          "medium": "Electricity",
+          "tariff": "String",
+          "supplier": "String",
+          "tariffType": null,
+          "paymentMethod": "String",
+          "standingCharge": 20.8666,
+          "onlineDiscount": 0,
+          "from": "2000-01-01T00:00:00.000Z",
+          "dualFuelDiscount": 0,
+          "annualConsumption": "2102.50 kWh",
+          "annualCost": 412.53786,
+          "tcr": null,
+          "exitFees": 0,
+          "unitRates": {
+            "Standard": 15.9988,
+            "Day": null,
+            "Night": null,
+            "Peak": null,
+            "__typename": "UnitRates"
+          },
+          "tariffEndsOn": null,
+          "priceGuaranteedUntil": null,
+          "isEconomy7": false,
+          "code": "String",
+          "isSmartPayg": false,
+          "meterGenerationType": null,
+          "__typename": "Product"
+        },
+        "__typename": "ProductDetails"
+      }
+    }
+  },
+  {
+    "data": {
+      "usageData": [
+        {
+          "date": "2020-12-19",
+          "usage": {
+            "gas": { "cost": null, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.9057337159999953,
+              "rates": [
+                {
+                  "cost": 0.6970677159999953,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-20",
+          "usage": {
+            "gas": { "cost": null, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.0015665280000208,
+              "rates": [
+                {
+                  "cost": 0.7929005280000209,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-21",
+          "usage": {
+            "gas": { "cost": null, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.38481278800001806,
+              "rates": [
+                {
+                  "cost": 0.17614678800001804,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-22",
+          "usage": {
+            "gas": { "cost": 0.8573089745261822, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2809805759999633,
+              "rates": [
+                {
+                  "cost": 0.07231457599996333,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-23",
+          "usage": {
+            "gas": { "cost": 0.8603083955423869, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.27954068400003373,
+              "rates": [
+                {
+                  "cost": 0.07087468400003376,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-24",
+          "usage": {
+            "gas": { "cost": 0.8769718456324096, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2731411639999668,
+              "rates": [
+                {
+                  "cost": 0.06447516399996682,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-25",
+          "usage": {
+            "gas": { "cost": 0.9006339447602185, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2725012120000547,
+              "rates": [
+                {
+                  "cost": 0.06383521200005471,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-26",
+          "usage": {
+            "gas": { "cost": 0.8853035706774021, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2774608399999738,
+              "rates": [
+                {
+                  "cost": 0.06879483999997381,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-27",
+          "usage": {
+            "gas": { "cost": 0.9182972018555797, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.27602094799997146,
+              "rates": [
+                {
+                  "cost": 0.06735494799997148,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-28",
+          "usage": {
+            "gas": { "cost": 0.9256291198951958, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2733011519999994,
+              "rates": [
+                {
+                  "cost": 0.06463515199999942,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-29",
+          "usage": {
+            "gas": { "cost": 0.9179639328538254, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2713812960000448,
+              "rates": [
+                {
+                  "cost": 0.06271529600004482,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-30",
+          "usage": {
+            "gas": { "cost": 0.909298938807003, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2721812359999895,
+              "rates": [
+                {
+                  "cost": 0.06351523599998952,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2020-12-31",
+          "usage": {
+            "gas": { "cost": 0.9232962368825751, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2694614400000174,
+              "rates": [
+                {
+                  "cost": 0.06079544000001746,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-01",
+          "usage": {
+            "gas": { "cost": 0.9132981668286221, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2705813559999546,
+              "rates": [
+                {
+                  "cost": 0.0619153559999546,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-02",
+          "usage": {
+            "gas": { "cost": 0.9256291198951958, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2661016919999878,
+              "rates": [
+                {
+                  "cost": 0.05743569199998778,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-03",
+          "usage": {
+            "gas": { "cost": 0.9356271899491867, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2544225680000093,
+              "rates": [
+                {
+                  "cost": 0.04575656800000931,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-04",
+          "usage": {
+            "gas": { "cost": 0.9212966228717846, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2656217280000355,
+              "rates": [
+                {
+                  "cost": 0.0569557280000355,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-05",
+          "usage": {
+            "gas": { "cost": 0.9196302778628239, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.2678615599999825,
+              "rates": [
+                {
+                  "cost": 0.059195559999982536,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-06",
+          "usage": {
+            "gas": { "cost": 0.9286285409114006, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.25986216000002615,
+              "rates": [
+                {
+                  "cost": 0.05119616000002619,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-07",
+          "usage": {
+            "gas": { "cost": 1.441196265679804, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 0.6382337799999912,
+              "rates": [
+                {
+                  "cost": 0.42956777999999124,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-08",
+          "usage": {
+            "gas": { "cost": 1.6954805140531775, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.223789859999968,
+              "rates": [
+                {
+                  "cost": 1.015123859999968,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-09",
+          "usage": {
+            "gas": { "cost": 1.7038122390982078, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.7957469600000115,
+              "rates": [
+                {
+                  "cost": 1.5870809600000115,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-10",
+          "usage": {
+            "gas": { "cost": 1.708478005123411, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.1236373720000081,
+              "rates": [
+                {
+                  "cost": 0.9149713720000081,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-11",
+          "usage": {
+            "gas": { "cost": 1.6204949886482078, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.5552849959999866,
+              "rates": [
+                {
+                  "cost": 1.3466189959999866,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-12",
+          "usage": {
+            "gas": { "cost": 1.5805027084321686, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.5391262080000412,
+              "rates": [
+                {
+                  "cost": 1.3304602080000412,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-13",
+          "usage": {
+            "gas": { "cost": 1.6748178359416115, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.0801206359999458,
+              "rates": [
+                {
+                  "cost": 0.8714546359999458,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-14",
+          "usage": {
+            "gas": { "cost": 1.708144736121619, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.277225852000014,
+              "rates": [
+                {
+                  "cost": 1.068559852000014,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-15",
+          "usage": {
+            "gas": { "cost": 1.62082825765, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.281065563999996,
+              "rates": [
+                {
+                  "cost": 1.072399563999996,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-16",
+          "usage": {
+            "gas": { "cost": 1.6338257487201955, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.2679465480000152,
+              "rates": [
+                {
+                  "cost": 1.0592805480000151,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-17",
+          "usage": {
+            "gas": { "cost": 1.6204949886482078, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.8856602159999953,
+              "rates": [
+                {
+                  "cost": 1.6769942159999953,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-18",
+          "usage": {
+            "gas": { "cost": 1.6878153270117693, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.5736836160000245,
+              "rates": [
+                {
+                  "cost": 1.3650176160000245,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-19",
+          "usage": {
+            "gas": { "cost": 1.6248274856716192, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": 1.3498604039999698,
+              "rates": [
+                {
+                  "cost": 1.1411944039999697,
+                  "name": "standard",
+                  "__typename": "Rate"
+                },
+                {
+                  "cost": 0.208666,
+                  "name": "standingCharge",
+                  "__typename": "Rate"
+                }
+              ],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        },
+        {
+          "date": "2021-01-20",
+          "usage": {
+            "gas": { "cost": null, "__typename": "GasUsage" },
+            "electricity": {
+              "cost": null,
+              "rates": [],
+              "__typename": "ElectricityUsage"
+            },
+            "__typename": "Usage"
+          },
+          "__typename": "UsageData"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "meterpoints": [
+        {
+          "from": "2000-01-01T00:00:00.000Z",
+          "id": 1,
+          "technicalDetailsDate": "2021-01-20T00:00:00.000Z",
+          "type": "Electricity Supply",
+          "smart": false,
+          "canAcceptReadings": true,
+          "__typename": "Meterpoint",
+          "readings": [
+            {
+              "cumulative": 1116,
+              "meter": "String",
+              "register": "1",
+              "quality": "Estimated",
+              "readingDate": "2020-02-01T00:00:00.000Z",
+              "source": "System",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 983,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-02-20T00:00:00.000Z",
+              "source": "Customer",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1057,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-03-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1220,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-03-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1224,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-03-31T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1228,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-04-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1407,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-04-29T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1411,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-04-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1416,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-05-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1605,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-05-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1611,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-05-31T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1614,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-06-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1771,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-06-29T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1776,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-06-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1780,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-07-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1928,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-07-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1935,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-07-31T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 1938,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-08-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2100,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-08-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2106,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-08-31T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2280,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-09-29T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2287,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-09-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2292,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-10-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2443,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-10-31T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2443,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-11-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2615,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-11-27T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2640,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-11-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2643,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-12-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2774,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-12-30T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 2774,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2021-01-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "kWh",
+              "__typename": "MeterReading"
+            }
+          ]
+        },
+        {
+          "from": "2000-01-01T00:00:00.000Z",
+          "id": 1,
+          "technicalDetailsDate": "2021-01-20T00:00:00.000Z",
+          "type": "Gas Supply",
+          "smart": false,
+          "canAcceptReadings": true,
+          "__typename": "Meterpoint",
+          "readings": [
+            {
+              "cumulative": 259,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-01-29T00:00:00.000Z",
+              "source": "Customer",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 266,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-02-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 322,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-02-20T00:00:00.000Z",
+              "source": "Customer",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 351,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-03-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 431,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-03-31T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 434,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-04-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 467,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-05-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 498,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-06-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 510,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-07-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 522,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-08-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 545,
+              "meter": "String",
+              "register": "1",
+              "quality": "Estimated",
+              "readingDate": "2020-09-01T00:00:00.000Z",
+              "source": "System",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 550,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-10-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 605,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-11-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 680,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2020-12-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            },
+            {
+              "cumulative": 753,
+              "meter": "String",
+              "register": "1",
+              "quality": "Normal",
+              "readingDate": "2021-01-01T00:00:00.000Z",
+              "source": "SMR",
+              "unit": "m3",
+              "__typename": "MeterReading"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "account": {
+        "id": 1,
+        "type": "String",
+        "name": "String",
+        "number": "0",
+        "currency": "GBP",
+        "from": "2000-01-01T00:00:00.000Z",
+        "to": null,
+        "balance": 48.49,
+        "pendingBalance": 0,
+        "maxTopupAmount": 251.51,
+        "switchStatus": "SwitchFinish",
+        "billingAddress": {
+          "name": "String",
+          "careOf": null,
+          "address": "String",
+          "town": "String",
+          "postcode": "String",
+          "__typename": "Address"
+        },
+        "address": {
+          "name": "String",
+          "careOf": null,
+          "address": "String",
+          "town": "String",
+          "postcode": "String",
+          "__typename": "Address"
+        },
+        "prepay": null,
+        "meterOverview": [
+          {
+            "meterpointId": 1,
+            "meterpointIdentifier": "String",
+            "fuel": "electricity",
+            "smart": true,
+            "smartVersion": "SMETS2",
+            "fromDt": "2000-01-01T00:00:00.000Z",
+            "canAcceptReadings": true,
+            "supplyStatus": "Registered",
+            "operationType": "String",
+            "meterPointServiceType": "DCC",
+            "gridSupplyGroup": "_N",
+            "__typename": "MeterOverview"
+          },
+          {
+            "meterpointId": 1,
+            "meterpointIdentifier": "1",
+            "fuel": "gas",
+            "smart": true,
+            "smartVersion": "SMETS2",
+            "fromDt": "2000-01-01T00:00:00.000Z",
+            "canAcceptReadings": true,
+            "supplyStatus": "Registered",
+            "operationType": "String",
+            "meterPointServiceType": "DCC",
+            "gridSupplyGroup": "_N",
+            "__typename": "MeterOverview"
+          }
+        ],
+        "status": "open",
+        "lossStatus": {
+          "activeLoss": false,
+          "objected": false,
+          "startDate": null,
+          "__typename": "LossStatus"
+        },
+        "inRangeOfSmartInstaller": true,
+        "productDetails": {
+          "gas": {
+            "medium": "Gas",
+            "tariff": "String",
+            "supplier": "String",
+            "tariffType": null,
+            "paymentMethod": "String",
+            "standingCharge": 20.4435,
+            "onlineDiscount": 0,
+            "from": "2000-01-01T00:00:00.000Z",
+            "dualFuelDiscount": 0,
+            "annualConsumption": "9914.00 kWh",
+            "annualCost": 363.592047,
+            "tcr": null,
+            "exitFees": 0,
+            "unitRates": {
+              "Standard": 2.9148,
+              "Day": null,
+              "Night": null,
+              "Peak": null,
+              "__typename": "UnitRates"
+            },
+            "tariffEndsOn": null,
+            "priceGuaranteedUntil": null,
+            "isEconomy7": false,
+            "code": "String",
+            "isSmartPayg": false,
+            "meterGenerationType": null,
+            "__typename": "Product"
+          },
+          "electricity": {
+            "medium": "Electricity",
+            "tariff": "String",
+            "supplier": "String",
+            "tariffType": null,
+            "paymentMethod": "String",
+            "standingCharge": 20.8666,
+            "onlineDiscount": 0,
+            "from": "2000-01-01T00:00:00.000Z",
+            "dualFuelDiscount": 0,
+            "annualConsumption": "2102.50 kWh",
+            "annualCost": 412.53786,
+            "tcr": null,
+            "exitFees": 0,
+            "unitRates": {
+              "Standard": 15.9988,
+              "Day": null,
+              "Night": null,
+              "Peak": null,
+              "__typename": "UnitRates"
+            },
+            "tariffEndsOn": null,
+            "priceGuaranteedUntil": null,
+            "isEconomy7": false,
+            "code": "String",
+            "isSmartPayg": false,
+            "meterGenerationType": null,
+            "__typename": "Product"
+          },
+          "__typename": "ProductDetails"
+        },
+        "__typename": "Account"
+      }
+    }
+  }
+]
