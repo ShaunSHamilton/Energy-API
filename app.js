@@ -25,7 +25,7 @@ app.route("/").post(async (req, res) => {
     });
     const data = await getData();
     await Energy.create(data);
-    if (req.body?.input === process.env.SECRET) {
+    if (req.body.input === process.env.SECRET) {
       return res.json({
         verified: true,
         name: "Shaun Hamilton",
