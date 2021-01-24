@@ -251,4 +251,4 @@ const EnergySchema = new Schema({
 
 const Energy = model("Energy", EnergySchema);
 
-export default Energy;
+module.exports = Energy;
