@@ -23,23 +23,44 @@ app.route("/").post(async (req, res) => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    const data = await getData();
-    await Energy.create(data);
     if (req.body.input === process.env.SECRET) {
+      const data = await getData();
+      const obj = {
+        productDetails: data[0].data.productDetails,
+        usageData: data[1].data.usageData,
+        meterPoints: data[2].data.meterpoints,
+        account: data[3].data.account,
+      };
+      const error =
+        obj.productDetails.errors ||
+        obj.usageData.errors ||
+        obj.meterPoints.errors ||
+        obj.account.errors;
+      if (error) {
+        return res.json({
+          verified: true,
+          error,
+          text: "Failed to query Bulb",
+          name: "Shaun Hamilton",
+        });
+      }
+      await Energy.create([obj]);
       return res.json({
         verified: true,
         name: "Shaun Hamilton",
-        data,
+        obj,
       });
     }
     res.json({ verified: false, error: "Invalid Login" });
   } catch (err) {
-    res.json({ verified: false, error: "Server Error" });
+    console.log("ERR", err);
+    res.json({ verified: false, text: "Server Error", error: err });
   }
 });
 
 app.route("/getData").get(async (req, res) => {
-  return res.json(await fetchFromDB());
+  const data = await fetchFromDB();
+  return res.json(data);
 });
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
@@ -135,7 +156,6 @@ const query = [
 
           fragment meterpointFragment on Meterpoint {
             from
-            id
             technicalDetailsDate
             type
             smart
@@ -145,7 +165,6 @@ const query = [
 
           fragment meterReadingFragment on MeterReading {
             cumulative
-            meter
             register
             quality
             readingDate
@@ -165,70 +184,13 @@ const query = [
             }
 
             fragment accountFragment on Account {
-              id
-              type
-              name
-              number
               currency
-              from
-              to
               balance
               pendingBalance
-              maxTopupAmount
-              switchStatus
-            prepay {
-              electricity
-              gas
-              __typename
-              }
-            status
-            lossStatus {
-              activeLoss
-              objected
-              startDate
-              __typename
-            }
-            inRangeOfSmartInstaller
-            productDetails {
-              gas {
-              ...productFragment
-              __typename
-              }
-              electricity {
-              ...productFragment
-              __typename
-              }
-              __typename
-            }
+              inRangeOfSmartInstaller
             __typename
           }
-
-
-          fragment productFragment on Product {
-              medium
-              standingCharge
-              onlineDiscount
-              from
-              dualFuelDiscount
-              annualConsumption
-              annualCost
-              tcr
-              exitFees
-              unitRates {
-                Standard
-                Day
-                Night
-                Peak
-                __typename
-              }
-              tariffEndsOn
-              priceGuaranteedUntil
-              isEconomy7
-              code
-              isSmartPayg
-              meterGenerationType
-              __typename
-            }`,
+          `,
     variables: { id: process.env.ACCOUNT_ID },
     operationName: "Accounts",
   },
@@ -240,7 +202,7 @@ async function fetchFromDB() {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    await Energy.findOne(
+    return await Energy.findOne(
       {},
       {},
       { sort: { created_at: -1 } },
