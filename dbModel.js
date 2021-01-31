@@ -114,6 +114,7 @@ const EnergySchema = new Schema({
   usageData: [usageDataSchema],
   meterPoints: [meterPointsSchema],
   account: accountSchema,
+  dateModified: Date,
 });
 
 const Energy = model("Energy", EnergySchema);

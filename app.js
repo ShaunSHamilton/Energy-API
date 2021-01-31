@@ -30,6 +30,7 @@ app.route("/").post(async (req, res) => {
         usageData: data[1].data.usageData,
         meterPoints: data[2].data.meterpoints,
         account: data[3].data.account,
+        dateModified: new Date().toISOString(),
       };
       const error =
         obj.productDetails.errors ||
@@ -205,7 +206,7 @@ async function fetchFromDB() {
     return await Energy.findOne(
       {},
       {},
-      { sort: { created_at: -1 } },
+      { sort: { created_at: 1 } },
       function (err, post) {
         if (err) return console.log(err);
         return post;
