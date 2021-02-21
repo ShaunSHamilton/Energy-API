@@ -25,32 +25,42 @@ app.route("/").post(async (req, res) => {
     });
     if (req.body.input === process.env.SECRET) {
       const data = await getData();
-      const obj = {
-        productDetails: data[0].data.productDetails,
-        usageData: data[1].data.usageData,
-        meterPoints: data[2].data.meterpoints,
-        account: data[3].data.account,
-        dateModified: new Date().toISOString(),
-      };
-      const error =
-        obj.productDetails.errors ||
-        obj.usageData.errors ||
-        obj.meterPoints.errors ||
-        obj.account.errors;
-      if (error) {
+      if (!data.error) {
+        const obj = {
+          productDetails: data[0].data.productDetails,
+          usageData: data[1].data.usageData,
+          meterPoints: data[2].data.meterpoints,
+          account: data[3].data.account,
+          dateModified: new Date().toISOString(),
+        };
+        const error =
+          obj.productDetails.errors ||
+          obj.usageData.errors ||
+          obj.meterPoints.errors ||
+          obj.account.errors;
+        if (error) {
+          return res.json({
+            verified: true,
+            error,
+            text: "Failed to query Bulb",
+            name: "Shaun Hamilton",
+          });
+        }
+        await Energy.create([obj]);
         return res.json({
           verified: true,
-          error,
-          text: "Failed to query Bulb",
           name: "Shaun Hamilton",
+          obj,
+        });
+      } else {
+        console.error("Fetch ERR: ", data.error);
+        return res.json({
+          verified: true,
+          error: data.error,
+          name: "Shaun Hamilton",
+          text: "Failed to fetch data",
         });
       }
-      await Energy.create([obj]);
-      return res.json({
-        verified: true,
-        name: "Shaun Hamilton",
-        obj,
-      });
     }
     res.json({ verified: false, error: "Invalid Login" });
   } catch (err) {
@@ -203,15 +213,23 @@ async function fetchFromDB() {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    return await Energy.findOne(
-      {},
-      {},
-      { sort: { created_at: 1 } },
-      function (err, post) {
-        if (err) return console.log(err);
-        return post;
+    let data;
+    await Energy.find({}, (err, docs) => {
+      if (err) {
+        data = { error: err };
+        return;
       }
-    );
+      docs.sort((a, b) => {
+        if (a.dateModified > b.dateModified) {
+          return -1;
+        } else {
+          return 1;
+        }
+      });
+      data = docs[0];
+      return data;
+    });
+    return data;
   } catch (err) {
     return { error: "Database Error" };
   }
